@@ -5,7 +5,9 @@
 /* device width: min up to 768px*/
 
 .wrapper {
-    width: 315px;
+    max-width: 1600px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -686,7 +688,9 @@
 
 @media (min-width: 768px) {
     .wrapper {
-        width: 648px;
+        /*width: 648px;*/
+        padding-left: 60px;
+        padding-right: 60px;
     }
     
     .first-screen {
@@ -857,7 +861,7 @@
 
     .team {
         padding-top: 0; 
-    
+
         &-title {
             font-size: 38px;
             line-height: 46px;
@@ -1009,7 +1013,9 @@
 
 @media (min-width: 1024px) {
     .wrapper {
-        width: 904px;
+        /*width: 904px;*/
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .first-screen {
@@ -1195,7 +1201,9 @@
 
 @media (min-width: 1440px) {
     .wrapper {
-        width: 1320px;
+        /*width: 1320px;*/
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .first-screen {
@@ -1274,7 +1282,9 @@
 
 @media (min-width: 1920px) {
     .wrapper {
-        width: 1600px;
+        /*width: 1600px;*/
+        padding-left: 160px;
+        padding-right: 160px;
     }
 
     .first-screen {

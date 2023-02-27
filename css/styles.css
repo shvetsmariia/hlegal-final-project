@@ -327,7 +327,9 @@ footer {
 
 /* device width: min up to 768px*/
 .wrapper {
-  width: 315px;
+  max-width: 1600px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -931,7 +933,9 @@ footer {
 /* device width: 768px up to 1024px*/
 @media (min-width: 768px) {
   .wrapper {
-    width: 648px;
+    /*width: 648px;*/
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .first-screen {
     background-size: 893.28px 100vh;
@@ -1175,7 +1179,9 @@ footer {
 /* device width: 1024px up to 1440px */
 @media (min-width: 1024px) {
   .wrapper {
-    width: 904px;
+    /*width: 904px;*/
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .first-screen {
     background-size: 669.96px 100vh;
@@ -1313,7 +1319,9 @@ footer {
 /* device width: 1440px up to 1920px */
 @media (min-width: 1440px) {
   .wrapper {
-    width: 1320px;
+    /*width: 1320px;*/
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .first-screen {
     background-size: 697px 100vh;
@@ -1365,7 +1373,9 @@ footer {
 /* device width: min 1920px */
 @media (min-width: 1920px) {
   .wrapper {
-    width: 1600px;
+    /*width: 1600px;*/
+    padding-left: 160px;
+    padding-right: 160px;
   }
   .first-screen {
     background-size: 872.34px 100vh;
