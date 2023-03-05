@@ -344,20 +344,21 @@ footer {
   margin-left: 2px;
 }
 
-.first-screen {
-  min-height: 100vh;
-  background: url(../assets/images/h-symbol.png) no-repeat;
+header {
+  height: 100vh;
+  background-image: url(../assets/images/h-symbol.svg);
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: 500px 100vh;
-}
-.first-screen-text {
-  padding: 0 15px;
 }
 
 .first-screen {
+  height: calc(100vh - 45px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.first-screen-text {
+  padding: 15px 15px 0 15px;
 }
 
 .header-nav {
@@ -378,9 +379,7 @@ footer {
   font-size: 0;
 }
 .header-nav-language {
-  display: block;
-  width: 33px;
-  height: 25px;
+  padding: 5px 7px;
   border-radius: 8px;
   border: none;
   color: #FFFFFF;
@@ -405,13 +404,26 @@ footer {
 .header-page {
   text-decoration: none;
 }
+.header-page::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+}
+.header-page:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+}
 .header-nav-link-fb {
   display: none;
 }
 
 .lang-bg {
   background-color: #F0145A;
-  padding: 5px 7px;
 }
 
 .phone-header {
@@ -474,19 +486,79 @@ footer {
 .menu-button {
   background-color: transparent;
   border: none;
-}
-.menu-hamburger {
+  padding: 0;
   width: 32px;
   height: 32px;
 }
+.menu-hamburger {
+  content: url(../assets/images/menu-hamburger.svg);
+  width: 32px;
+  height: 32px;
+}
+.menu-hamburger:active {
+  content: url(../assets/images/menu-hamburger-active.svg);
+}
+.menu-popup-bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(50, 50, 100, 0.7);
+  height: 7500px;
+  z-index: 10;
+}
+.menu-popup {
+  position: fixed;
+  bottom: 0;
+  left: 8px;
+  right: 8px;
+  min-width: 359px;
+  padding: 12px;
+  padding-top: 64px;
+  background-color: #FFFFFF;
+  border-radius: 12px 12px 0px 0px;
+  z-index: 15;
+}
+.menu-popup a {
+  display: block;
+  color: #24A3FF;
+  background-color: #F5F5FA;
+  padding: 7px 0;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+.menu-popup a:not(:last-child) {
+  margin-bottom: 15px;
+}
+.menu-popup a:active {
+  background-color: #E6E6F0;
+}
+.menu-close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
 
 .heading {
+  min-width: 315px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
   text-align: center;
-  margin: 129px 15px 159px 15px;
 }
 
 .see-more {
@@ -899,9 +971,13 @@ footer {
 }
 
 .fb-img {
+  content: url(../assets/images/fb-blue.svg);
   width: 38px;
   height: 38px;
   margin-bottom: 10px;
+}
+.fb-img:hover {
+  content: url(../assets/images/fb-hover.svg);
 }
 
 .phone {
@@ -941,8 +1017,8 @@ footer {
     padding: 0 60px;
   }
   .first-screen {
-    background-size: 893.28px 100vh;
-    padding: 50px 60px 0 60px;
+    padding: 0 60px 0 60px;
+    height: calc(100vh - 105px);
   }
   .first-screen-text {
     padding: 0;
@@ -950,7 +1026,7 @@ footer {
   .header-nav {
     background: none;
     justify-content: flex-start;
-    padding: 0 0 30px 0;
+    padding: 50px 0px 30px 60px;
   }
   .header-nav-address {
     display: flex;
@@ -960,8 +1036,12 @@ footer {
   }
   .header-nav-fb {
     display: block;
+    content: url(../assets/images/fb-white.svg);
     width: 24px;
     height: 24px;
+  }
+  .header-nav-fb:hover {
+    content: url(../assets/images/fb-hover.svg);
   }
   .header-nav-link-fb {
     display: block;
@@ -1027,9 +1107,6 @@ footer {
   }
   .menu-hamburger {
     display: none;
-  }
-  .heading {
-    margin: 269px 0px 417px 0px;
   }
   .company {
     padding-top: 60px;
@@ -1196,9 +1273,6 @@ footer {
 }
 /* device width: 1024px up to 1440px */
 @media (min-width: 1024px) {
-  .first-screen {
-    background-size: 669.96px 100vh;
-  }
   .header-nav {
     display: none;
   }
@@ -1212,21 +1286,24 @@ footer {
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 16px;
-    padding-bottom: 0;
+    padding: 0;
   }
   .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  .first-screen {
+    height: 100vh;
+  }
+  .first-screen-text {
+    padding-top: 50px;
+  }
   .logo-and-menu {
     margin-bottom: 20px;
   }
   .header-pages {
     justify-content: flex-end;
-  }
-  .heading {
-    margin: 245px 0px 289px 0px;
   }
   .company {
     display: flex;
@@ -1337,9 +1414,6 @@ footer {
     padding-left: 60px;
     padding-right: 60px;
   }
-  .first-screen {
-    background-size: 697px 100vh;
-  }
   .heading {
     margin: 261px 0px 305px 0px;
   }
@@ -1381,9 +1455,6 @@ footer {
   .wrapper {
     padding-left: 160px;
     padding-right: 160px;
-  }
-  .first-screen {
-    background-size: 872.34px 100vh;
   }
   .heading {
     margin: 361px 0px 405px 0px;

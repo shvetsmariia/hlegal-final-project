@@ -12,17 +12,17 @@
 <body>
     <div class="gradient">
         <header>
-            <div class="first-screen">
-                <div class="header-nav">
-                    <div class="header-nav-bttns header-nav-dot">
-                        <button class="header-nav-language">ук</button>
-                        <button class="header-nav-language">ру</button>
-                        <button class="header-nav-language lang-bg">en</button>
-                    </div>
-                    <div class="header-nav-address header-nav-dot">Kyiv, Mechnikova str., 14/1</div>
-                    <a href="tel:0800211927" class="phone-header header-nav-dot element-hover">0800 211 927</a>
-                    <a href="" class="header-nav-link-fb"><img src="./assets/images/fb-white.svg" alt="facebook" class="header-nav-fb"></a>
+            <div class="header-nav">
+                <div class="header-nav-bttns header-nav-dot">
+                    <a class="header-nav-language">ук</a>
+                    <a class="header-nav-language">ру</a>
+                    <a class="header-nav-language lang-bg">en</a>
                 </div>
+                <div class="header-nav-address header-nav-dot">Kyiv, Mechnikova str., 14/1</div>
+                <a href="tel:0800211927" class="phone-header header-nav-dot element-hover">0800 211 927</a>
+                <a href="" class="header-nav-link-fb"><img src="" alt="facebook" class="header-nav-fb"></a>
+            </div>
+            <div class="first-screen">
                 <div class="first-screen-text">
                     <div class="header-top">
                         <div class="logo-and-menu">
@@ -33,25 +33,25 @@
                                 </div>
                                 <div class="logo-description">services</div>
                             </div>
-                            <button type="button" class="menu-button"><img src="./assets/images/menu-hamburger.svg" alt="menu" class="menu-hamburger"></button>
+                            <button type="menu" class="menu-button" onclick="showDiv()"><img src="" alt="menu" class="menu-hamburger"></button>
                         </div>
                         <div class="header-right-align">
                             <div class="header-nav header-nav-hidden">
                                 <div class="header-nav-bttns header-nav-dot">
-                                    <button class="header-nav-language">ук</button>
-                                    <button class="header-nav-language">ру</button>
-                                    <button class="header-nav-language lang-bg">en</button>
+                                    <a class="header-nav-language">ук</a>
+                                    <a class="header-nav-language">ру</a>
+                                    <a class="header-nav-language lang-bg">en</a>
                                 </div>
                                 <div class="header-nav-address header-nav-dot">Kyiv, Mechnikova str., 14/1</div>
                                 <a href="tel:0800211927" class="phone-header header-nav-dot element-hover">0800 211 927</a>
-                                <a href=""><img src="./assets/images/fb-white.svg" alt="facebook" class="header-nav-fb"></a>
+                                <a href=""><img src="" alt="facebook" class="header-nav-fb"></a>
                             </div>
                             <div class="header-pages">
-                                <a href="" class="header-page element-hover">about us</a>
-                                <a href="" class="header-page element-hover">services</a>
-                                <a href="" class="header-page element-hover">team</a>
-                                <a href="" class="header-page element-hover">publications</a>
-                                <a href="" class="header-page element-hover">contact</a>
+                                <a href="" class="header-page">about us</a>
+                                <a href="" class="header-page">services</a>
+                                <a href="" class="header-page">team</a>
+                                <a href="" class="header-page">publications</a>
+                                <a href="" class="header-page">contact</a>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,17 @@
                     <h1 class="heading">you legal solutions provider</h1>
                 </div>
                 <div class="see-more-button">
-                    <button class="see-more see-more-hover"></button>
+                    <button type="button" class="see-more see-more-hover"></button>
+                </div>
+                <div class="menu-popup-bg" id="menuPopup">
+                    <div class="menu-popup">
+                        <a>about us</a>
+                        <a>послуги</a>
+                        <a>команда</a>
+                        <a>публікації</a>
+                        <a>контакти</a>
+                        <button type="button" class="menu-close-button" onclick="closeMenu()"><img src="./assets/images/menu-button-close.svg" alt="close"></button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -140,7 +150,7 @@
         <div class="wrapper">
             <div class="team-section">
                 <div class="team-section-flex">
-                    <img alt="Олександр Олександровський" class="author-img">
+                    <img src="" alt="Олександр Олександровський" class="author-img">
                     <div class="team-description">
                         <a href="" class="team-subtitle element-hover-arrow">команда</a>
                         <h2 class="team-title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
@@ -222,7 +232,7 @@
                         <p class="legal legal-hidden">© 2021 HLEGAL Law company, LLC</p>
                     </div>
                     <div class="footer-contacts-bottom">
-                        <a href="" class="footer-dot footer-fb"><img src="./assets/images/fb-blue.svg" alt="facebook" width="38" height="38" class="fb-img"></a>
+                        <a href="" class="footer-dot footer-fb"><img src="" alt="facebook" width="38" height="38" class="fb-img"></a>
                         <a href="tel:0800211927" class="phone footer-dot footer-phone element-hover">0800 211 927</a>
                         <a href="mailto:contact@forstudy.space" class="email footer-email element-hover">contact@forstudy.space</a>
                         <p class="legal">© 2021 HLEGAL Law company, LLC</p>
@@ -231,5 +241,6 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts.js"></script>
 </body>
 </html>
