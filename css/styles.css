@@ -326,6 +326,446 @@ footer {
 }
 
 /* device width: min up to 768px*/
+.page-background {
+  background-color: #F5F5FA;
+}
+
+.header-publications-nav {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bttns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 0;
+}
+.nav-language {
+  padding: 5px 7px;
+  border-radius: 8px;
+  border: none;
+  color: #B3B3BA;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.nav-language-active {
+  background-color: #F0145A;
+  color: #FFFFFF;
+}
+.nav-contacts {
+  display: none;
+}
+.nav-address {
+  display: none;
+}
+.nav-link-fb {
+  display: none;
+}
+.nav-phone {
+  display: flex;
+  color: #B3B3BA;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.menu-and-logo {
+  background-color: #FFFFFF;
+  padding: 13px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  display: flex;
+  align-items: flex-start;
+}
+.logo-h-name {
+  content: url(../assets/images/logo-h.svg);
+  display: block;
+  margin-right: 3.18px;
+  width: 11.68px;
+  height: 19.11px;
+}
+.logo-legal-name {
+  content: url(../assets/images/publications/logo-legal.svg);
+  position: relative;
+  display: block;
+  width: 54.47px;
+  height: 24.8px;
+  margin-right: 19.62px;
+}
+.logo-page {
+  position: relative;
+  color: #323264;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.logo::after {
+  content: url(../assets/images/publications/logo-law-company-375.svg);
+  position: absolute;
+  top: 70%;
+  left: auto;
+}
+
+.logo::before {
+  content: url(../assets/images/slash.svg);
+  position: absolute;
+  top: auto;
+  left: 34%;
+}
+
+.menu-button-img {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+.menu-burger {
+  content: url(../assets/images/publications/publication-menu-hamburger.svg);
+  width: 32px;
+  height: 32px;
+}
+.menu-burger:active {
+  content: url(../assets/images/menu-hamburger-active.svg);
+}
+
+.display-radio {
+  display: none;
+}
+
+input:checked + .publications-buttons-text {
+  background-color: #FFFFFF;
+  border: 2px solid #E6E6F0;
+}
+
+label:hover {
+  background-color: #F5F5FA;
+  border: 2px solid #E6E6F0;
+}
+
+.publications-section-page {
+  padding: 30px;
+  padding-bottom: 60px;
+}
+.publications-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: #E6E6F0;
+  border-radius: 12px;
+  width: 233px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.publications-buttons-text {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  color: #323264;
+  padding: 8px 30px 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+.publications-button {
+  display: flex;
+  background-color: #24A3FF;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border: none;
+  border-radius: 12px;
+  padding: 18px 30px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.publication-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.publication-card {
+  font-size: 0;
+}
+.publication-card-background {
+  padding: 30px;
+  height: 314px;
+  min-width: 315px;
+  background-color: #FFFFFF;
+  border-radius: 0 0 8px 8px;
+}
+.publication-card-background-6 {
+  border-radius: 8px;
+}
+.publication-card-image {
+  min-width: 100%;
+  min-height: 200px;
+}
+
+/* device width: 768px up to 1024px*/
+@media (min-width: 768px) {
+  .header-publications {
+    padding: 50px 60px 60px;
+    background-color: #FFFFFF;
+  }
+  .header-publications-nav {
+    padding: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .menu-and-logo {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .menu-burger {
+    display: none;
+  }
+  .menu-button-img {
+    display: none;
+  }
+  .nav-contact-info {
+    display: block;
+  }
+  .nav-address {
+    display: block;
+    color: #B3B3BA;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .nav-link-fb {
+    display: block;
+  }
+  .nav-phone {
+    display: flex;
+    color: #B3B3BA;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .nav-fb {
+    display: block;
+    content: url(../assets/images/publications/facebook-logo-grey.svg);
+    width: 24px;
+    height: 24px;
+  }
+  .nav-fb:hover {
+    content: url(../assets/images/fb-hover.svg);
+  }
+  .nav-dot::after {
+    content: "";
+    display: inline-block;
+    background-color: #E6E6F0;
+    border: none;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .logo-h-name {
+    content: url(../assets/images/publications/logo-h-768.svg);
+    margin-right: 6px;
+    width: 21.89px;
+    height: 35.82px;
+  }
+  .logo-legal-name {
+    content: url(../assets/images/publications/logo-legal-768.svg);
+    width: 102.14px;
+    height: 46.5px;
+    margin-right: 29px;
+  }
+  .logo-page {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .logo::before {
+    content: url(../assets/images/publications/logo-slash-768.svg);
+    position: absolute;
+    top: auto;
+    left: 35%;
+  }
+  .logo::after {
+    content: url(../assets/images/publications/logo-law-company-768.svg);
+    position: absolute;
+    top: 95%;
+    left: auto;
+  }
+  .publications-header-page {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 15px;
+    color: #24A3FF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+  .publications-header-page::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+  }
+  .publications-header-page:hover::after {
+    background-color: #F0145A;
+  }
+  .active-page {
+    color: #F0145A;
+  }
+  .active-page::after {
+    background-color: #F0145A;
+  }
+  .publication-card {
+    width: 47.8%;
+  }
+  .publication-card-background-6 {
+    height: 100%;
+  }
+}
+/* device width: 1024px up to 1440px */
+@media (min-width: 1024px) {
+  .header-publications-nav {
+    display: none;
+  }
+  .menu-and-logo {
+    margin-bottom: 0;
+  }
+  .header-nav-768 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+  }
+  .nav-contacts {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+  }
+  .publication-card {
+    width: 31.2%;
+  }
+}
+/* device width: 1440px up to 1920px */
+@media (min-width: 1440px) {
+  .publication-card-background {
+    height: 250px;
+  }
+  .publication-card-background-6 {
+    height: 100%;
+  }
+}
+/* device width: min 1920px */
+@media (min-width: 1920px) {
+  .header-publications-bg {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .publication-cards {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .publication-card-background {
+    height: 230px;
+  }
+  .publication-card-background-6 {
+    height: 100%;
+  }
+}
+/* device width: min up to 768px*/
+.services-page {
+  margin-bottom: 80px;
+}
+
+footer div.wrapper div.footer-services {
+  border-top: none;
+}
+
+/* device width: 768px up to 1024px*/
+@media (min-width: 768px) {
+  .services-header {
+    padding-left: 60px;
+  }
+  div.logo-name div.services-logo-description {
+    display: block;
+    margin-left: 29px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+  }
+  div.logo-name-services::before {
+    content: url(../assets/images/publications/logo-slash-768.svg);
+    position: absolute;
+    top: auto;
+    left: 44%;
+  }
+}
+/* device width: 1024px up to 1440px */
+@media (min-width: 1024px) {
+  .services-header {
+    padding-right: 60px;
+  }
+}
+/* device width: 1440px up to 1920px */
+@media (min-width: 1440px) {
+  .first-screen {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services-header {
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .publications-section {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* device width: min up to 768px*/
 .wrapper {
   max-width: 100vw;
   padding: 0 30px;
@@ -531,6 +971,7 @@ header {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+  text-decoration: none;
 }
 .menu-popup a:not(:last-child) {
   margin-bottom: 15px;
@@ -584,6 +1025,10 @@ header {
   background-position: center;
 }
 
+main section div.wrapper {
+  padding: 0;
+}
+
 .company {
   padding-top: 30px;
 }
@@ -593,12 +1038,14 @@ header {
   flex-direction: row;
   overflow: scroll;
 }
+.company-points p:nth-child(1) {
+  padding-left: 30px;
+}
 .company-points p:nth-child(4) {
   margin-right: 0;
 }
 .company-point {
   display: inline-block;
-  height: 37px;
   white-space: nowrap;
   margin-right: 30px;
   margin-top: 0;
@@ -610,13 +1057,17 @@ header {
 }
 .company-point-colored {
   background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 .company-point-colored:hover {
   background: #F0145A;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+.company-about {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .company-info {
   border-top: 4px solid rgba(255, 255, 255, 0.3);
@@ -649,8 +1100,8 @@ header {
   background: #CACADB;
   border-radius: 0px 0px 12px 12px;
   position: absolute;
-  left: 20px;
-  right: 20px;
+  left: -10px;
+  right: -10px;
   bottom: -10px;
 }
 .services::after {
@@ -659,8 +1110,8 @@ header {
   background: #E7E7F2;
   border-radius: 0px 0px 12px 12px;
   position: absolute;
-  left: 40px;
-  right: 40px;
+  left: 10px;
+  right: 10px;
   top: 100.44%;
 }
 
@@ -684,8 +1135,6 @@ header {
 .section-title {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
   font-size: 30px;
@@ -1114,10 +1563,16 @@ header {
   .company-points {
     padding-bottom: 60px;
   }
+  .company-points p:nth-child(1) {
+    padding-left: 60px;
+  }
   .company-point {
-    height: 46px;
     font-size: 38px;
     line-height: 46px;
+  }
+  .company-about {
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .company-info {
     border-top: 4px solid rgba(255, 255, 255, 0.3);
@@ -1270,6 +1725,12 @@ header {
     font-size: 16px;
     line-height: 20px;
   }
+  .active-page {
+    color: #F0145A;
+  }
+  .active-page::after {
+    background-color: #F0145A;
+  }
 }
 /* device width: 1024px up to 1440px */
 @media (min-width: 1024px) {
@@ -1305,6 +1766,10 @@ header {
   .header-pages {
     justify-content: flex-end;
   }
+  main section div.wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
   .company {
     display: flex;
     flex-direction: row;
@@ -1315,17 +1780,24 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: end;
     padding: 14.5px 0 14.5px 0;
     width: 375px;
     overflow: visible;
+  }
+  .company-points p:nth-child(1) {
+    padding-left: 0px;
   }
   .company-points p:nth-child(4) {
     margin-bottom: 0;
   }
   .company-point {
     margin-bottom: 30px;
+    margin-right: 0;
   }
   .company-about {
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1350,11 +1822,6 @@ header {
   }
   .services::after {
     top: 100.91%;
-  }
-  .section-title {
-    font-size: 38px;
-    line-height: 46px;
-    margin-bottom: 60px;
   }
   .partners-images a {
     width: 25%;
@@ -1414,15 +1881,36 @@ header {
     padding-left: 60px;
     padding-right: 60px;
   }
+  .wrapper-first-screen {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .first-screen {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .heading {
     margin: 261px 0px 305px 0px;
   }
+  main section div.wrapper {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
   .company {
-    padding-left: 120px;
-    padding-right: 120px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .company-info {
     width: 581px;
+  }
+  .services {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .services::after {
     top: 101.05%;
@@ -1433,12 +1921,27 @@ header {
   .team-description {
     height: 344px;
   }
+  .team-section {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .author-img {
     content: url(../assets/images/author1440.png);
     height: 344px;
   }
+  .partners {
+    max-width: 1720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .partners-img {
     width: 360px;
+  }
+  .publications-section {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .card {
     width: 31.8%;
@@ -1449,6 +1952,11 @@ header {
   .card-3 {
     width: 31.8%;
   }
+  .footer {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* device width: min 1920px */
 @media (min-width: 1920px) {
@@ -1456,8 +1964,16 @@ header {
     padding-left: 160px;
     padding-right: 160px;
   }
+  .wrapper-first-screen {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
   .heading {
     margin: 361px 0px 405px 0px;
+  }
+  main section div.wrapper {
+    padding-left: 280px;
+    padding-right: 280px;
   }
   .company-info {
     width: 861px;
@@ -1481,8 +1997,6 @@ header {
   }
   .partners {
     padding-bottom: 60px;
-    padding-left: 100px;
-    padding-right: 100px;
   }
   .partners-img {
     width: 430px;

@@ -1,0 +1,74 @@
+/* device width: min up to 768px*/
+
+.services {
+    &-page {
+        margin-bottom: 80px;
+    }
+}
+
+footer div.wrapper div.footer-services {
+    border-top: none;
+}
+
+/* device width: 768px up to 1024px*/
+
+@media (min-width: 768px) {
+    .services {
+        &-header {
+            padding-left: 60px;
+        }
+    }
+
+    div.logo-name div.services-logo-description {
+        display: block;
+        margin-left: 29px;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 44px;
+    }
+    
+    div.logo-name-services::before {
+        content: url(../assets/images/publications/logo-slash-768.svg);
+        position: absolute;
+        top: auto;
+        left: 44%;
+    }
+}
+
+/* device width: 1024px up to 1440px */
+
+@media (min-width: 1024px) {
+    .services {
+        &-header {
+            padding-right: 60px;
+        }
+    }
+}
+
+/* device width: 1440px up to 1920px */
+
+@media (min-width: 1440px) {
+    .first-screen {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services {
+        &-header {
+            padding-right: 0;
+            padding-left: 0;
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .publications-section {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

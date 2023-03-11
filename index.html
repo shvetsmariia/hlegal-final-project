@@ -22,61 +22,63 @@
                 <a href="tel:0800211927" class="phone-header header-nav-dot element-hover">0800 211 927</a>
                 <a href="" class="header-nav-link-fb"><img src="" alt="facebook" class="header-nav-fb"></a>
             </div>
-            <div class="first-screen">
-                <div class="first-screen-text">
-                    <div class="header-top">
-                        <div class="logo-and-menu">
-                            <div class="logo-name">
-                                <div class="logo-images">
-                                    <img src="./assets/images/logo-h.svg" alt="menu" class="logo-h">
-                                    <img src="./assets/images/logo-legal.svg" alt="menu" class="logo-legal">
+            <div class="wrapper-first-screen">
+                <div class="first-screen">
+                    <div class="first-screen-text">
+                        <div class="header-top">
+                            <div class="logo-and-menu">
+                                <div class="logo-name">
+                                    <div class="logo-images">
+                                        <img src="./assets/images/logo-h.svg" alt="menu" class="logo-h">
+                                        <img src="./assets/images/logo-legal.svg" alt="menu" class="logo-legal">
+                                    </div>
+                                    <div class="logo-description">services</div>
                                 </div>
-                                <div class="logo-description">services</div>
+                                <button type="menu" class="menu-button" onclick="showDiv()"><img src="" alt="menu" class="menu-hamburger"></button>
                             </div>
-                            <button type="menu" class="menu-button" onclick="showDiv()"><img src="" alt="menu" class="menu-hamburger"></button>
-                        </div>
-                        <div class="header-right-align">
-                            <div class="header-nav header-nav-hidden">
-                                <div class="header-nav-bttns header-nav-dot">
-                                    <a class="header-nav-language">ук</a>
-                                    <a class="header-nav-language">ру</a>
-                                    <a class="header-nav-language lang-bg">en</a>
+                            <div class="header-right-align">
+                                <div class="header-nav header-nav-hidden">
+                                    <div class="header-nav-bttns header-nav-dot">
+                                        <a class="header-nav-language">ук</a>
+                                        <a class="header-nav-language">ру</a>
+                                        <a class="header-nav-language lang-bg">en</a>
+                                    </div>
+                                    <div class="header-nav-address header-nav-dot">Kyiv, Mechnikova str., 14/1</div>
+                                    <a href="tel:0800211927" class="phone-header header-nav-dot element-hover">0800 211 927</a>
+                                    <a href=""><img src="" alt="facebook" class="header-nav-fb"></a>
                                 </div>
-                                <div class="header-nav-address header-nav-dot">Kyiv, Mechnikova str., 14/1</div>
-                                <a href="tel:0800211927" class="phone-header header-nav-dot element-hover">0800 211 927</a>
-                                <a href=""><img src="" alt="facebook" class="header-nav-fb"></a>
-                            </div>
-                            <div class="header-pages">
-                                <a href="" class="header-page">about us</a>
-                                <a href="" class="header-page">services</a>
-                                <a href="" class="header-page">team</a>
-                                <a href="" class="header-page">publications</a>
-                                <a href="" class="header-page">contact</a>
+                                <div class="header-pages">
+                                    <a href="" class="header-page">about us</a>
+                                    <a href="./services.html" class="header-page">services</a>
+                                    <a href="" class="header-page">team</a>
+                                    <a href="./publications.html" class="header-page">publications</a>
+                                    <a href="" class="header-page">contact</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <h1 class="heading">you legal solutions provider</h1>
-                </div>
-                <div class="see-more-button">
-                    <button type="button" class="see-more see-more-hover"></button>
-                </div>
-                <div class="menu-popup-bg" id="menuPopup">
-                    <div class="menu-popup">
-                        <a>about us</a>
-                        <a>послуги</a>
-                        <a>команда</a>
-                        <a>публікації</a>
-                        <a>контакти</a>
-                        <button type="button" class="menu-close-button" onclick="closeMenu()"><img src="./assets/images/menu-button-close.svg" alt="close"></button>
+                    <div>
+                        <h1 class="heading">you legal solutions provider</h1>
+                    </div>
+                    <div class="see-more-button">
+                        <button type="button" class="see-more see-more-hover"></button>
+                    </div>
+                    <div class="menu-popup-bg" id="menuPopup">
+                        <div class="menu-popup">
+                            <a>about us</a>
+                            <a href="./services.html">послуги</a>
+                            <a>команда</a>
+                            <a href="./publications.html">публікації</a>
+                            <a>контакти</a>
+                            <button type="button" class="menu-close-button" onclick="closeMenu()"><img src="./assets/images/menu-button-close.svg" alt="close"></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <section class="">
-                <div class="wrapper">
+            <section>
+                <div class="wrapper wrapper-company">
                     <div class="company">
                         <div class="company-points">
                             <p class="company-point company-point-colored">Consistent</p>
@@ -94,8 +96,8 @@
                     </div>
                 </div>
             </section>    
-            <section class="services">
-                <div class="wrapper">
+            <div class="wrapper">
+                <section class="services">
                     <a href="" class="section-subtitle element-hover-arrow">Services</a>
                     <h2 class="section-title">What can we do better than others?</h2>
                     <div class="symbols">
@@ -142,8 +144,8 @@
                             <p class="symbol-text">Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
     </div>
     <section class="team">

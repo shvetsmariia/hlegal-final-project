@@ -1,0 +1,469 @@
+/* device width: min up to 768px*/
+
+.page-background {
+    background-color: #F5F5FA; 
+}
+
+.header-publications {
+    &-nav {
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav {
+    &-bttns {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 0;
+    }
+
+    &-language {
+        padding: 5px 7px;
+        border-radius: 8px;
+        border: none;
+        color: #B3B3BA;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &-active {
+            background-color: #F0145A;
+            color: #FFFFFF;
+        }
+    }
+
+    &-contacts {
+        display: none;
+    }
+
+    &-address {
+        display: none;
+    }
+
+    &-link-fb {
+        display: none;
+    }
+
+    &-phone {
+        display: flex;
+        color: #B3B3BA;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.menu-and-logo {
+    background-color: #FFFFFF;
+    padding: 13px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+        display: flex;
+        align-items: center;
+
+    &-img {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &-h-name {
+        content: url(../assets/images/logo-h.svg);
+        display: block;
+        margin-right: 3.18px;
+        width: 11.68px;
+        height: 19.11px;
+    }
+
+    &-legal-name {
+        content: url(../assets/images/publications/logo-legal.svg);
+        position: relative;
+        display: block;
+        width: 54.47px;
+        height: 24.8px;
+        margin-right: 19.62px;
+    }
+
+    &-page {
+        position: relative;
+        color: #323264; 
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+}
+
+.logo::after {
+    content: url(../assets/images/publications/logo-law-company-375.svg);
+    position: absolute;
+    top: 70%;
+    left: auto;
+}
+
+.logo::before {
+    content: url(../assets/images/slash.svg);
+    position: absolute;
+    top: auto;
+    left: 34%;
+}
+
+.menu {
+    &-button-img {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+    }
+
+    &-burger {
+        content: url(../assets/images/publications/publication-menu-hamburger.svg);
+        width: 32px;
+        height: 32px;
+
+        &:active {
+            content: url(../assets/images/menu-hamburger-active.svg);
+        }
+    }
+}
+
+.display-radio {
+    display: none; 
+}
+
+input:checked + .publications-buttons-text {
+    background-color: #FFFFFF;
+    border: 2px solid #E6E6F0; 
+}
+
+label:hover {
+    background-color: #F5F5FA;
+    border: 2px solid #E6E6F0; 
+}
+
+.publications {
+    &-section-page {
+        padding: 30px;
+        padding-bottom: 60px;
+    }
+
+    &-buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        background-color: #E6E6F0;
+        border-radius: 12px;
+        width: 233px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &-text {
+            border: 2px solid transparent; 
+            border-radius: 12px;
+            color: #323264; 
+            padding: 8px 30px 10px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+
+    &-button {
+        display: flex;
+        background-color: #24A3FF;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border: none;
+        border-radius: 12px;
+        padding: 18px 30px;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+}
+
+.publication {
+    &-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &-card {
+        font-size: 0;
+
+        &-background {
+            padding: 30px;
+            height: 314px;
+            min-width: 315px;
+            background-color:#FFFFFF; 
+            border-radius: 0 0 8px 8px;
+
+            &-6 {
+                border-radius: 8px;
+            }
+        }
+
+        &-image {
+            min-width: 100%; 
+            min-height: 200px;
+        }
+    }
+}
+
+/* device width: 768px up to 1024px*/
+
+@media (min-width: 768px) {
+    .header-publications {
+        padding: 50px 60px 60px;
+        background-color: #FFFFFF;
+
+        &-nav {
+            padding: 0;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+    .menu {
+        &-and-logo {
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        &-burger {
+            display: none;
+        }
+
+        &-button-img {
+            display: none;
+        }
+    }
+
+    .nav {
+        &-contact-info {
+            display: block;
+        }
+
+        &-address {
+            display: block;
+            color: #B3B3BA;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    
+        &-link-fb {
+            display: block;
+        }
+    
+        &-phone {
+            display: flex;
+            color: #B3B3BA;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    
+        &-fb {
+            display: block;
+            content: url(../assets/images/publications/facebook-logo-grey.svg);
+                width: 24px;
+                height: 24px;
+    
+            &:hover {
+                content: url(../assets/images/fb-hover.svg);
+            }
+        }
+
+        &-dot::after {
+            content: '';
+            display: inline-block;
+            background-color: #E6E6F0;
+            border: none;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+    }
+
+    .logo {
+        &-h-name {
+            content: url(../assets/images/publications/logo-h-768.svg);
+            margin-right: 6px;
+            width: 21.89px;
+            height: 35.82px;
+        }
+
+        &-legal-name {
+            content: url(../assets/images/publications/logo-legal-768.svg);
+            width: 102.14px;
+            height: 46.5px;
+            margin-right: 29px;
+        }
+    
+        &-page {
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+
+    .logo::before {
+        content: url(../assets/images/publications/logo-slash-768.svg);
+        position: absolute;
+        top: auto;
+        left: 35%;
+    }
+
+    .logo::after {
+        content: url(../assets/images/publications/logo-law-company-768.svg);
+        position: absolute;
+        top: 95%;
+        left: auto;
+    }
+
+    .publications {   
+        &-header-page {
+            display: block;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 15px;
+            color: #24A3FF;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-decoration: none;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: transparent;
+            }
+
+            &:hover::after {
+                background-color: #F0145A;
+            }
+        }
+    }
+
+    .active-page {
+        color: #F0145A;
+        
+        &::after {
+            background-color: #F0145A;
+        }
+    }
+
+    .publication-card {
+        width: 47.8%;
+
+        &-background-6 {
+            height: 100%;
+        }
+    }   
+}
+
+/* device width: 1024px up to 1440px */
+
+@media (min-width: 1024px) {
+    .header-publications {
+        &-nav {
+            display: none;
+        }
+    }
+
+    .menu-and-logo {
+        margin-bottom: 0;
+    }
+
+    .header-nav-768 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav {
+        &-contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: end;
+        }
+
+        &-contacts {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 16px;
+        }
+    }
+
+    .publication-card {
+        width: 31.2%;
+    }   
+}
+
+/* device width: 1440px up to 1920px */
+
+@media (min-width: 1440px) {
+    .publication-card {
+        &-background {
+            height: 250px;
+        
+            &-6 {
+                height: 100%;
+            }
+        }    
+    }   
+}
+
+/* device width: min 1920px */
+
+@media (min-width: 1920px) {
+    .header-publications-bg {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .publication-cards {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .publication-card {
+        &-background {
+            height: 230px;
+        
+            &-6 {
+                height: 100%;
+            }
+        }    
+    }   
+}

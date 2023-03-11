@@ -1,5 +1,7 @@
 @import "./normalize";
 @import "./scaffolding";
+@import "./publications";
+@import "./services";
 @import "../assets/fonts/fonts.css"; 
 
 /* device width: min up to 768px*/
@@ -238,6 +240,7 @@ header {
             font-size: 24px;
             line-height: 29px;
             text-align: center;
+            text-decoration: none;
         }
 
         & a:not(:last-child) {
@@ -299,7 +302,11 @@ header {
         }
     }
 }
-                
+
+main section div.wrapper {
+    padding: 0;
+}
+
 .company {
     padding-top: 30px;
 
@@ -309,6 +316,10 @@ header {
         flex-direction: row;
         overflow: scroll;
 
+        p:nth-child(1) {
+            padding-left: 30px;
+        }
+
         p:nth-child(4) {
             margin-right: 0;
         }
@@ -316,7 +327,6 @@ header {
 
     &-point {
         display: inline-block;
-        height: 37px;
         white-space: nowrap;
         margin-right: 30px;
         margin-top: 0;
@@ -328,8 +338,8 @@ header {
 
         &-colored {
             background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
 
             &:hover {
                 background: #F0145A;
@@ -337,6 +347,11 @@ header {
                 background-clip: text;
             }
         }
+    }
+
+    &-about {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     &-info {
@@ -373,8 +388,8 @@ header {
         background: #CACADB;
         border-radius: 0px 0px 12px 12px;
         position: absolute;
-        left: 20px;
-        right: 20px;
+        left: -10px;
+        right: -10px;
         bottom: -10px;
     }
 
@@ -384,8 +399,8 @@ header {
         background: #E7E7F2;
         border-radius: 0px 0px 12px 12px;
         position: absolute;
-        left: 40px;
-        right: 40px;
+        left: 10px;
+        right: 10px;
         top: 100.44%;
     }
 }
@@ -413,8 +428,6 @@ header {
     &-title {
         background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text; 
         -webkit-text-fill-color: transparent;
         font-weight: 700;
         font-size: 30px;
@@ -907,12 +920,20 @@ header {
 
         &-points {
             padding-bottom: 60px;
+
+            p:nth-child(1) {
+                padding-left: 60px;
+            }
         }
 
         &-point {
-            height: 46px;
             font-size: 38px;
             line-height: 46px;
+        }
+        
+        &-about {
+            padding-left: 60px;
+            padding-right: 60px;
         }
 
         &-info {
@@ -1114,6 +1135,14 @@ header {
             line-height: 20px;
         }
     }
+
+    .active-page {
+        color: #F0145A;
+        
+        &::after {
+            background-color: #F0145A;
+        }
+    }   
 }
 
 /* device width: 1024px up to 1440px */
@@ -1163,6 +1192,11 @@ header {
         }
     }
     
+    main section div.wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
     .company {
         display: flex;
         flex-direction: row;
@@ -1173,9 +1207,14 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: end;
             padding: 14.5px 0 14.5px 0;
             width: 375px;     
             overflow: visible;
+
+            p:nth-child(1) {
+                padding-left: 0px;
+            }
 
             & p:nth-child(4) {
                 margin-bottom: 0;
@@ -1184,9 +1223,12 @@ header {
 
         &-point {
             margin-bottom: 30px;
+            margin-right: 0;
         }
 
         &-about {
+            padding-left: 0;
+            padding-right: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -1217,14 +1259,6 @@ header {
     .services {
         &::after {
             top: 100.91%;
-        }
-    }
-    
-    .section {
-        &-title {
-            font-size: 38px;
-            line-height: 46px;
-            margin-bottom: 60px;
         }
     }
     
@@ -1305,22 +1339,46 @@ header {
     .wrapper {
         padding-left: 60px;
         padding-right: 60px;
+
+        &-first-screen {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
     }
+
+    .first-screen {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     
     .heading {
         margin: 261px 0px 305px 0px;
     }
 
+    main section div.wrapper {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
     .company {
-        padding-left: 120px;
-        padding-right: 120px;
-        
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+
         &-info {
             width: 581px;
         }
     }
 
     .services {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+
         &::after {
             top: 101.05%;
         }
@@ -1334,6 +1392,12 @@ header {
         &-description {
             height: 344px;
         }
+
+        &-section {
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     
     .author {
@@ -1344,9 +1408,19 @@ header {
     }
 
     .partners {
+        max-width: 1720px;
+        margin-left: auto;
+        margin-right: auto;
+
         &-img {
             width: 360px;
         }
+    }
+
+    .publications-section {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .card {
@@ -1360,6 +1434,12 @@ header {
             width: 31.8%;
         }
     }
+
+    .footer {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* device width: min 1920px */
@@ -1368,10 +1448,20 @@ header {
     .wrapper {
         padding-left: 160px;
         padding-right: 160px;
+
+        &-first-screen {
+            padding-left: 160px;
+            padding-right: 160px;
+        }
     }
 
     .heading {
         margin: 361px 0px 405px 0px;
+    }
+
+    main section div.wrapper {
+        padding-left: 280px;
+        padding-right: 280px;
     }
 
     .company {
@@ -1410,8 +1500,6 @@ header {
 
     .partners {
         padding-bottom: 60px;
-        padding-left: 100px;
-        padding-right: 100px;
 
         &-img {
             width: 430px;
